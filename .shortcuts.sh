@@ -13,8 +13,9 @@ alias ucd="cd /Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_2"
 alias cucd="cd /Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_2/Programming_2"
 alias o="open ."
 alias mk="mkdir"
-alias down="cd /Users/cokelly/Desktop/Donwloads; rtorrent"
-alias sdown="screen;cd /Users/cokelly/Desktop/Donwloads; rtorrent"
+alias down="cd /Users/cokelly/Desktop/Downloads; rtorrent"
+alias ddown="mv /Users/cokelly/Desktop/*.torrent /Volumes/Storage/Downloads; cd /Volumes/Storage/Downloads; rtorrent"
+alias aws="ssh -i "/Users/cokelly/.ssh/First_instance.pem" ec2-user@ec2-52-49-92-149.eu-west-1.compute.amazonaws.com"
 
 # Git shortcuts
 alias gs='git status '
