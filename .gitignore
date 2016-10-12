@@ -3,4 +3,5 @@
 !.gitconfig
 !.shortcuts.sh
 !README.md
-
+!emacs.d/
+!emacs.d/*/*
