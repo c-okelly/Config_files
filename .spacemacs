@@ -28,6 +28,7 @@ values."
      ess
      ;; better-defaults
      emacs-lisp
+     java
      ;; git
      ;; markdown
      ;; org
@@ -251,6 +252,16 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq eclim-eclipse-dirs "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse"
+        eclim-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclim"
+        ;; Use another eclimd executable
+        ;; Specify the workspace to use by default
+        ;; eclimd-default-workspace "/path/to/default/eclipse/workspace"
+        eclimd-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclimd"
+        ;; Whether or not to block emacs until eclimd is ready
+        eclimd-wait-for-process t
+        auto-save-default nil
+        )
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
