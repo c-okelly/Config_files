@@ -35,6 +35,19 @@ alias get='git '
 # Shortcuts - Files
 alias hosts='sudo nano /etc/hosts'
 
+# Compile java funcions and run
+function runj {
+    echo "Compling and running $1 "
+    # Created array of element seperate on .
+    IFS="." read -r -a array <<< "$1"
+    # Compile and then run
+    javac $1
+    java "${array[0]}"
+    class="${array[0]}.class"
+    # Remove class
+    rm $class
+}
+
 # Jokes
 alias dance="echo I do not dance, bitch"				
 alias moo="cowsay Not all cows moo you know"
