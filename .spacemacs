@@ -110,7 +110,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 16
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -209,7 +209,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers 1
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode nil
@@ -252,16 +252,34 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (setq eclim-eclipse-dirs "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse"
-        eclim-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclim"
-        ;; Use another eclimd executable
-        ;; Specify the workspace to use by default
-        ;; eclimd-default-workspace "/path/to/default/eclipse/workspace"
-        eclimd-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclimd"
-        ;; Whether or not to block emacs until eclimd is ready
-        eclimd-wait-for-process t
-        auto-save-default nil
-        )
+
+  (setq user-full-name "Conor O'Kelly")
+
+  ;; UTF8!
+  (set-language-environment 'utf-8)
+  (set-terminal-coding-system 'utf-8)
+  (setq locale-coding-system 'utf-8)
+  (set-default-coding-systems 'utf-8)
+  (set-selection-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8)
+
+  (setenv "LC_CTYPE" "utf-8")
+  (setenv "LC_ALL" "en_US.utf-8")
+  (setenv "LANG" "en_US.utf-8")
+
+  ;; Eclim variables
+  (setq eclim-eclipse-dirs "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse")
+  (setq eclim-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclim")
+  ;; Use another eclimd executable
+  ;; Specify the workspace to use by
+  (setq eclimd-default-workspace "/Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4/Advanced_Data_Structures_Java")
+  (setq eclimd-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclimd")
+  ;; Whether or not to block emacs until eclimd is ready
+  (setq eclimd-wait-for-process t)
+  (setq auto-save-default nil)
+
+  ;; Set python shell version
+  (setq python-shell-interpreter "/usr/local/bin/python3")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
