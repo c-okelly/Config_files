@@ -24,9 +24,11 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
-     (python :variables python-test-runner 'pytest)
+     better-defaults
+     ;; Languages
+     shell-scripts
      ess
-     ;; better-defaults
+     (python :variables python-test-runner 'pytest)
      emacs-lisp
      java
      ;; git
