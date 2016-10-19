@@ -1,0 +1,15 @@
+# This will add sepearte directories for laptop directory locations.
+# Will be loaded using a alias for rtorrent so the default file is also loaded and this data is imported after.
+
+# Default directory to save the downloaded torrents.
+directory = /Users/cokelly/Desktop/Downloads
+
+# Default session directory. Make sure you don't run multiple instance
+# of rtorrent using the same session directory. Perhaps using a
+# relative path?
+session = /Users/cokelly/Desktop/Downloads/Session_Data  
+
+
+# Watch a directory for new torrents, and stop those that have been
+# deleted.
+schedule = watch_directory_1,10,10,"load_start=/home/user/torrents/watch/*.torrent"
