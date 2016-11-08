@@ -26,6 +26,7 @@ values."
      auto-completion
      better-defaults
      ;; Languages
+     (c-c++ :variables c-c++-default-mode-for-headers 'c++-mode)
      shell-scripts
      ess
      (python :variables python-test-runner 'pytest)
@@ -211,7 +212,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers 1
+   dotspacemacs-line-numbers 'relative
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode nil
@@ -270,24 +271,32 @@ you should place your code here."
   (setenv "LANG" "en_US.utf-8")
 
   ;; Eclim variables
-  (setq eclim-eclipse-dirs "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse")
-  (setq eclim-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclim")
+  (setq eclim-eclipse-dirs "/Applications/Eclipse.app/Contents/Eclipse")
+  (setq eclim-executable "/Applications/Eclipse.app/Contents/Eclipse/eclim")
   ;; Use another eclimd executable
   ;; Specify the workspace to use by
   (setq eclimd-default-workspace "/Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4/Advanced_Data_Structures_Java")
-  (setq eclimd-executable "/Users/cokelly/eclipse/Eclipse.app/Contents/Eclipse/eclimd")
+  (setq eclimd-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimd")
   ;; Whether or not to block emacs until eclimd is ready
   (setq eclimd-wait-for-process t)
   (setq auto-save-default nil)
 
   ;; Set python shell version
-  (setq py-python-command "/usr/local/bin/python3")
-  (setq python-python-command "python3")
+  (setq python-shell-interpreter "/usr/local/bin/python3")
+  (setq python-shell-completion-native-enable nil)
+  ;; (setq py-python-command "/usr/local/bin/python3")
+  ;; (setq python-python-command "python3")
+
+  ;; Set default directroy for helm
+  (setq default-directory "/Users/cokelly/Google_Drive")
+
+  ;; Add extra non spacemacs packages
+  dotspacemacs-additional-packages '(vimish-fold)
 
   ;; Custom spacemacs bindins. All to be bound under h
   (spacemacs/set-leader-keys "d h" 'hs-toggle-hiding)
-  )
-
+  (spacemacs/set-leader-keys "d s" 'shrink-window)
+)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
@@ -298,8 +307,8 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yapfify xterm-color ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline shell-pop restart-emacs request rainbow-delimiters pyvenv pytest pyenv-mode py-isort popwin pip-requirements persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree multi-term move-text macrostep lorem-ipsum live-py-mode linum-relative link-hint info+ indent-guide ido-vertical-mode hydra hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation help-fns+ helm-themes helm-swoop helm-pydoc helm-projectile helm-mode-manager helm-make projectile helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck pkg-info epl flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight ess-smart-equals ess-R-object-popup ess-R-data-view ctable ess julia-mode eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diminish define-word cython-mode company-statistics company-anaconda company column-enforce-mode clean-aindent-mode bind-map bind-key auto-yasnippet yasnippet auto-highlight-symbol auto-dictionary auto-compile packed anaconda-mode pythonic f dash s aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core async ac-ispell auto-complete popup quelpa package-build spacemacs-theme)))
- '(python-shell-interpreter "python3"))
+    (disaster company-c-headers cmake-mode clang-format evil-vimish-fold mwim fish-mode company-shell yapfify xterm-color ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline shell-pop restart-emacs request rainbow-delimiters pyvenv pytest pyenv-mode py-isort popwin pip-requirements persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree multi-term move-text macrostep lorem-ipsum live-py-mode linum-relative link-hint info+ indent-guide ido-vertical-mode hydra hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation help-fns+ helm-themes helm-swoop helm-pydoc helm-projectile helm-mode-manager helm-make projectile helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck pkg-info epl flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight ess-smart-equals ess-R-object-popup ess-R-data-view ctable ess julia-mode eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diminish define-word cython-mode company-statistics company-anaconda company column-enforce-mode clean-aindent-mode bind-map bind-key auto-yasnippet yasnippet auto-highlight-symbol auto-dictionary auto-compile packed anaconda-mode pythonic f dash s aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core async ac-ispell auto-complete popup quelpa package-build spacemacs-theme)))
+ '(python-shell-interpreter "python3" t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
