@@ -18,6 +18,7 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     html
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -288,9 +289,10 @@ you should place your code here."
   ;; (setq py-python-command "/usr/local/bin/python3")
   ;; (setq python-python-command "python3")
 
-  ;; Set default directroy for helm
+  ;; Set default directroy for helm and disable neo vc intergration
   (setq default-directory "/Users/cokelly/Google_Drive")
-
+  (setq neo-vc-integration nil)
+ 
   ;; Add extra non spacemacs packages
   dotspacemacs-additional-packages '(vimish-fold)
 
