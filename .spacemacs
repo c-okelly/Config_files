@@ -272,6 +272,9 @@ you should place your code here."
   (setenv "LC_ALL" "en_US.utf-8")
   (setenv "LANG" "en_US.utf-8")
 
+  ;; Look of setup
+  (spacemacs/set-default-font '("Menlo" :size 15))
+
   ;; Eclim variables
   (setq eclim-eclipse-dirs "/Applications/Eclipse.app/Contents/Eclipse")
   (setq eclim-executable "/Applications/Eclipse.app/Contents/Eclipse/eclim")
@@ -280,7 +283,7 @@ you should place your code here."
   (setq eclimd-default-workspace "/Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4/Advanced_Data_Structures_Java")
   (setq eclimd-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimd")
   ;; Whether or not to block emacs until eclimd is ready
-  (setq eclimd-wait-for-process t)
+  (setq eclimd-wait-for-process nil)
   (setq auto-save-default nil)
 
   ;; Set python shell version
@@ -292,7 +295,7 @@ you should place your code here."
   ;; Set default directroy for helm and disable neo vc intergration
   (setq default-directory "/Users/cokelly/Google_Drive")
   (setq neo-vc-integration nil)
- 
+
   ;; Add extra non spacemacs packages
   dotspacemacs-additional-packages '(vimish-fold)
 
