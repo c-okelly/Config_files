@@ -18,12 +18,12 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     html
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     (spell-checking :variables spell-checking-enable-by-default 1)
      markdown
      auto-completion
      better-defaults
@@ -34,6 +34,8 @@ values."
      (python :variables python-test-runner 'pytest)
      emacs-lisp
      java
+     (latex :variables latex-build-command "LaTeX")
+     html
      ;; git
      ;; markdown
      ;; org
@@ -275,6 +277,9 @@ you should place your code here."
   ;; Look of setup
   (spacemacs/set-default-font '("Menlo" :size 15))
 
+  ;; Latex in line
+  (add-hook 'doc-view-mode-hook 'auto-revert-mode)
+
   ;; Eclim variables
   (setq eclim-eclipse-dirs "/Applications/Eclipse.app/Contents/Eclipse")
   (setq eclim-executable "/Applications/Eclipse.app/Contents/Eclipse/eclim")
@@ -302,7 +307,9 @@ you should place your code here."
   ;; Custom spacemacs bindins. All to be bound under h
   (spacemacs/set-leader-keys "d h" 'hs-toggle-hiding)
   (spacemacs/set-leader-keys "d s" 'shrink-window)
+  (spacemacs/set-leader-keys "d c" 'ispell)
 )
+
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
