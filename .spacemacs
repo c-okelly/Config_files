@@ -38,7 +38,7 @@ values."
      html
      ;; git
      ;; markdown
-     ;; org
+     org
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
@@ -275,7 +275,7 @@ you should place your code here."
   (setenv "LANG" "en_US.utf-8")
 
   ;; Look of setup
-  (spacemacs/set-default-font '("Menlo" :size 15))
+  (spacemacs/set-default-font '("OpenDyslexic" :size 15))
 
   ;; Latex in line
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
