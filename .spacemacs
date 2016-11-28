@@ -23,7 +23,7 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     (spell-checking :variables spell-checking-enable-by-default 1)
+     (spell-checking :variables spell-checking-enable-by-default t)
      markdown
      auto-completion
      better-defaults
