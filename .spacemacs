@@ -278,7 +278,13 @@ you should place your code here."
   (spacemacs/set-default-font '("OpenDyslexic" :size 15))
   (global-relative-line-numbers-mode)
   (setq relative-line-numbers-motion-function 'forward-visible-line)
+  ;; Set current line to absolute line number
+  (defun relative-abs-line-numbers-format (offset)
+    (if (= 0 offset)
+        (number-to-string (line-number-at-pos))
+      (number-to-string (abs offset))))
 
+  (setq relative-line-numbers-format 'relative-abs-line-numbers-format)
   ;; Latex in line
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
 
