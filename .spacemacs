@@ -50,7 +50,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(relative-line-numbers)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -216,7 +216,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers 'relative
+   dotspacemacs-line-numbers 'nil
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode nil
@@ -276,6 +276,8 @@ you should place your code here."
 
   ;; Look of setup
   (spacemacs/set-default-font '("OpenDyslexic" :size 15))
+  (global-relative-line-numbers-mode)
+  (setq relative-line-numbers-motion-function 'forward-visible-line)
 
   ;; Latex in line
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
@@ -302,7 +304,7 @@ you should place your code here."
   (setq neo-vc-integration nil)
 
   ;; Add extra non spacemacs packages
-  dotspacemacs-additional-packages '(vimish-fold)
+  ;; dotspacemacs-additional-packages '(vimish-fold relative-line-numbers)
 
   ;; Custom spacemacs bindins. All to be bound under h
   (spacemacs/set-leader-keys "d h" 'hs-toggle-hiding)
@@ -327,4 +329,4 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(relative-line-numbers ((t (:background "dark blue" :foreground "SpringGreen3")))))
