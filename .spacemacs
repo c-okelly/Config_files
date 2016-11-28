@@ -275,7 +275,8 @@ you should place your code here."
   (setenv "LANG" "en_US.utf-8")
 
   ;; Look of setup
-  (spacemacs/set-default-font '("OpenDyslexic" :size 15))
+  ;; OpenDyslexic
+  (spacemacs/set-default-font '("Monaco" :size 15))
   (global-relative-line-numbers-mode)
   (setq relative-line-numbers-motion-function 'forward-visible-line)
   ;; Set current line to absolute line number
