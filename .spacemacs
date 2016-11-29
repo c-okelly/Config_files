@@ -289,6 +289,7 @@ you should place your code here."
       (number-to-string (abs offset))))
 
   (setq relative-line-numbers-format 'relative-abs-line-numbers-format)
+  '(relative-line-numbers ((t (:background "gray23" :foreground "magenta2"))))
   dotspacemacs-default-theme 'lush
 
   ;; Latex in line
@@ -341,4 +342,4 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(relative-line-numbers ((t (:background "gray23" :foreground "magenta2")))))
+ )
