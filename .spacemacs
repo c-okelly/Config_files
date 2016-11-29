@@ -45,6 +45,9 @@ values."
      spell-checking
      syntax-checking
      ;; version-control
+
+     ;; Themes
+     themes-megapack
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -286,6 +289,8 @@ you should place your code here."
       (number-to-string (abs offset))))
 
   (setq relative-line-numbers-format 'relative-abs-line-numbers-format)
+  dotspacemacs-default-theme 'lush
+
   ;; Latex in line
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
 
@@ -336,4 +341,4 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(relative-line-numbers ((t (:background "dark blue" :foreground "SpringGreen3")))))
+ '(relative-line-numbers ((t (:background "gray23" :foreground "magenta2")))))
