@@ -205,7 +205,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup t
+   dotspacemacs-maximized-at-startup nil
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -268,9 +268,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
   (setq user-full-name "Conor O'Kelly")
-  ;; Keep emacs server alive on quit
-  ;; (setq-default dotspacemacs-persistent-server t)
-  ;; (add-to-list 'default-frame-alist '(fullscreen . maximized) dotspacemacs-maximized-at-startup t)
+  (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
   ;; UTF8!
   (set-language-environment 'utf-8)
@@ -285,7 +283,7 @@ you should place your code here."
   (setenv "LANG" "en_US.utf-8")
 
   ;; Look of setup
-  (spacemacs/set-default-font '("Monaco" :size 12))
+  (spacemacs/set-default-font '("Monaco" :size 15))
   (global-relative-line-numbers-mode)
   (setq relative-line-numbers-motion-function 'forward-visible-line)
   ;; Set current line to absolute line number
