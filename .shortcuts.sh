@@ -12,10 +12,16 @@ alias c="cd /Users/cokelly/Google_Drive/Code"
 alias ucd="cd /Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4"
 alias o="open ."
 alias mk="mkdir"
+# Non work navigaiton shortcuts
 alias down="cd /Users/cokelly/Desktop/Downloads; rtorrent"
 alias ddown="mv /Users/cokelly/Desktop/*.torrent /Volumes/Storage/Downloads; cd /Volumes/Storage/Downloads; rtorrent"
 alias aws="ssh -i "/Users/cokelly/.ssh/First_instance.pem" ec2-user@ec2-52-49-92-149.eu-west-1.compute.amazonaws.com"
 alias karabiner="cd /Users/cokelly/Library/Application\ Support/Karabiner"
+
+# Work navigation
+alias rep="cd /Users/conorokelly/Desktop/DevWork/repos"
+alias dockQUp="docker-compose down && rm -rf webapps/* && docker-compose up"
+alias dockFUp="docker-compose down && docker-compose pull && rm -rf webapps/* && docker-compose up"
 
 # Git shortcuts
 alias gs='git status '
