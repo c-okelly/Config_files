@@ -115,9 +115,9 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(
+   dotspacemacs-themes '(gruvbox
                          spacemacs-dark
-                         gruvbox)
+                         )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -269,7 +269,6 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
   (setq user-full-name "Conor O'Kelly")
-  (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
   ;; UTF8!
   (set-language-environment 'utf-8)
@@ -320,10 +319,9 @@ you should place your code here."
   (spacemacs/set-leader-keys "d c" 'ispell)
 
   ;; Org mode templates
-  (setq org-default-notes-file "~/dev/org/refile.org")
   (setq org-capture-templates
-        (quote (("t" "todo" entry (file "~/Desktop/any.org")
-                 "* TODO %?\n%T\n" :clock-in t :clock-resume t))))
+        '(("l" "check" checkitem (file+headline "~/Desktop/learning.org" "Tasks") " "
+           )))
 )
 
 
