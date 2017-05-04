@@ -1,9 +1,9 @@
 *
+!.hammerspoon/init.lua
+!.inputrc
 !.gitignore
 !.gitconfig
 !.shortcuts.sh
 !README.md
 !.spacemacs
-!.rtorrent.rc
-!.lap_torrent.rc
 !.bachrc
