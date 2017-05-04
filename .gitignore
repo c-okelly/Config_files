@@ -1,4 +1,5 @@
 *
+!.hammerspoon/init.lua
 !.inputrc
 !.gitignore
 !.gitconfig
