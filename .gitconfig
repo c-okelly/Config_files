@@ -2,7 +2,7 @@
 	helper = osxkeychain
 [user]
 	name = cokelly
-	email = okellyconor@gmail.com
+	email = conor.okelly@murex.com
 [push]
 	default = simple
 [alias]
@@ -13,3 +13,14 @@
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   type = cat-file -t
   dump = cat-file -p
+
+[url "https://github"]
+    insteadOf = git://github
+[core]
+	excludesfile = /Users/conorokelly/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
