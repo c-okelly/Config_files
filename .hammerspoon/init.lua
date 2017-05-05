@@ -1,12 +1,8 @@
 
--- hs.hotkey.bind({}, "`", function()
---     hs.eventtap.keyStroke({}, "ctrl")
--- end)
-
+-- Ctrl e to escapse
 hs.hotkey.bind({"ctrl"}, "e", function()
     hs.eventtap.keyStroke({}, "ESCAPE")
 end)
-
 
 -- Arrow keys
 hs.hotkey.bind({"option"}, "j", function()
@@ -20,6 +16,11 @@ hs.hotkey.bind({"option"}, "k", function()
 end)
 hs.hotkey.bind({"option"}, "l", function()
     hs.eventtap.keyStroke({}, "right")
+end)
+
+-- command space to return
+hs.hotkey.bind({"command"}, "space", function()
+    hs.eventtap.keyStroke({}, "return")
 end)
 
 -- Number keys
@@ -55,12 +56,49 @@ hs.hotkey.bind({"shift","ctrl","option","command"}, ";", function()
     hs.eventtap.keyStroke({}, "0")
 end)
 
--- Special characters
+-- Special characters - command right
 
+hs.hotkey.bind({"option"}, "n", function()
+    hs.eventtap.keyStroke({"shift"}, "7")
+end)
 hs.hotkey.bind({"option"}, "h", function()
     hs.eventtap.keyStroke({"shift"}, "1")
 end)
+hs.hotkey.bind({"option"}, "y", function()
+    hs.eventtap.keyStroke({"shift"}, "4")
+end)
+hs.hotkey.bind({"option"}, "u", function()
+    hs.eventtap.keyStroke({"shift"}, "2")
+end)
+hs.hotkey.bind({"option"}, "o", function()
+    hs.eventtap.keyStroke({"shift"}, "3")
+end)
+hs.hotkey.bind({"option"}, ";", function()
+    hs.eventtap.keyStroke({"shift"}, "5")
+end)
+hs.hotkey.bind({"option"}, "'", function()
+    hs.eventtap.keyStroke({"shift"}, "8")
+end)
 
--- hs.hotkey.bind({}, "§", function()
---     hs.eventtap.keyStroke({"shift"}, "`")
--- end)
+-- Special characters - command left
+
+hs.hotkey.bind({"command"}, "j", function()
+    hs.eventtap.keyStroke({"shift"}, "9")
+end)
+hs.hotkey.bind({"command"}, "k", function()
+    hs.eventtap.keyStroke({"shift"}, "0")
+end)
+hs.hotkey.bind({"command"}, "l", function()
+    hs.eventtap.keyStroke({"shift"}, "-")
+end)
+hs.hotkey.bind({"command"}, ";", function()
+    hs.eventtap.keyStroke({}, "=")
+end)
+hs.hotkey.bind({"command"}, "'", function()
+    hs.eventtap.keyStroke({}, "-")
+end)
+hs.hotkey.bind({"command"}, "\\", function()
+    hs.eventtap.keyStroke({"shift"}, "=")
+end)
+
+

@@ -18,7 +18,7 @@ alias ddown="mv /Users/cokelly/Desktop/*.torrent /Volumes/Storage/Downloads; cd 
 alias karabiner="cd /Users/cokelly/Library/Application\ Support/Karabiner"
 
 # Work navigation
-alias rep="cd /Users/conorokelly/Desktop/DevWork/repos"
+alias dev="cd /Users/conorokelly/Desktop/DevWork"
 alias dockQUp="docker-compose down && rm -rf webapps/* && docker-compose up"
 alias dockFUp="docker-compose down && docker-compose pull && rm -rf webapps/* && docker-compose up"
 
