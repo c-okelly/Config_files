@@ -7,11 +7,59 @@ hs.hotkey.bind({"ctrl"}, "e", function()
     hs.eventtap.keyStroke({}, "ESCAPE")
 end)
 
+
+-- Arrow keys
+hs.hotkey.bind({"option"}, "j", function()
+    hs.eventtap.keyStroke({}, "left")
+end)
+hs.hotkey.bind({"option"}, "i", function()
+    hs.eventtap.keyStroke({}, "up")
+end)
+hs.hotkey.bind({"option"}, "k", function()
+    hs.eventtap.keyStroke({}, "down")
+end)
+hs.hotkey.bind({"option"}, "l", function()
+    hs.eventtap.keyStroke({}, "right")
+end)
+
+-- Number keys
+
+hs.hotkey.bind({"shift","ctrl","option","command"}, "a", function()
+    hs.eventtap.keyStroke({}, "1")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "s", function()
+    hs.eventtap.keyStroke({}, "2")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "d", function()
+    hs.eventtap.keyStroke({}, "3")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "f", function()
+    hs.eventtap.keyStroke({}, "4")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "g", function()
+    hs.eventtap.keyStroke({}, "5")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "h", function()
+    hs.eventtap.keyStroke({}, "6")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "j", function()
+    hs.eventtap.keyStroke({}, "7")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "k", function()
+    hs.eventtap.keyStroke({}, "8")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, "l", function()
+    hs.eventtap.keyStroke({}, "9")
+end)
+hs.hotkey.bind({"shift","ctrl","option","command"}, ";", function()
+    hs.eventtap.keyStroke({}, "0")
+end)
+
+-- Special characters
+
 hs.hotkey.bind({"option"}, "h", function()
     hs.eventtap.keyStroke({"shift"}, "1")
 end)
-
-
 
 -- hs.hotkey.bind({}, "§", function()
 --     hs.eventtap.keyStroke({"shift"}, "`")
