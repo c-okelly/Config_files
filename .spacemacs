@@ -231,7 +231,7 @@ values."
    dotspacemacs-highlight-delimiters 'all
    ;; If non nil advises quit functions to keep server open when quitting.
    ;; (default nil)
-   dotspacemacs-persistent-server nil
+   dotspacemacs-persistent-server t
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
@@ -269,11 +269,6 @@ you should place your code here."
 
   (setq user-full-name "Conor O'Kelly")
   ;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
-
-  ;; Org mode templates
-  (setq org-capture-templates
-        '(("t" "todo" entry (file+headline "~/Desktop/DevWork/Org_Files/learn.org" "Tasks")
-           "* TODO [#A] %?\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")))
 
   ;; UTF8!
   (set-language-environment 'utf-8)
@@ -323,10 +318,12 @@ you should place your code here."
   (spacemacs/set-leader-keys "d s" 'shrink-window)
   (spacemacs/set-leader-keys "d c" 'ispell)
 
-  ;; Org mode templates
+  ;; Org capture mode templates
   (setq org-capture-templates
-        '(("l" "check" checkitem (file+headline "~/Desktop/learning.org" "Tasks") " "
-           )))
+        '(
+          ("l" "check" checkitem (file+headline "~/Desktop/learning.org" "Tasks") " ")
+          ;; ("r" "check" checkitem (file+headline "~/Desktop/learning.org" "Tasks") " ")
+          ))
   ;; JavaScript Development setup
   ;; use web-mode for .html files
   ;; (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
