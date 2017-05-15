@@ -43,18 +43,26 @@
                 "f9": "fastforward"
             },
             "name": "Default profile",
+            "one_to_many_mappings": {
+                "right_option": [
+                    "left_command",
+                    "left_option",
+                    "left_control",
+                    "left_shift"
+                ]
+            },
             "selected": true,
             "simple_modifications": {
                 "caps_lock": "left_option",
-                "grave_accent_and_tilde": "left_control",
-                "non_us_backslash": "grave_accent_and_tilde"
+                "left_command": "left_option",
+                "left_option": "left_command",
+                "non_us_backslash": "left_control"
             },
-            "one_to_many_mappings": {
-                "right_command": [ "left_command", "left_option", "left_control", "left_shift" ]
-            },
+            "standalone_keys": {},
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "keyboard_type": "ansi"
+                "keyboard_type": "ansi",
+                "standalone_keys_delay_milliseconds": 200
             }
         }
     ]
