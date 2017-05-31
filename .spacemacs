@@ -321,8 +321,8 @@ you should place your code here."
   ;; Org capture mode templates
   (setq org-capture-templates
         '(
-          ("l" "check" checkitem (file+headline "~/Desktop/learning.org" "Tasks") " ")
-          ;; ("r" "check" checkitem (file+headline "~/Desktop/learning.org" "Tasks") " ")
+          ("a" "ankiToDo" checkitem (file+headline "~/Desktop/Notes/Org_Files/1. learning/3. anki.org" "Research") " ")
+          ("w" "Daily tasks" checkitem (file+headline "~/Desktop/Notes/Org_Files/6. workDaily.org" "Daily tasks") " ")
           ))
   ;; JavaScript Development setup
   ;; use web-mode for .html files
