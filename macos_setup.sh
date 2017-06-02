@@ -36,8 +36,14 @@ echo Installing tmux
 brew install tmux
 echo Installing iTerm2
 brew cask install --appdir="/Applications" iterm2
+echo install hammerspoon
+brew cask install --appdir="/Applications" hammerspoon
+echo install karabiner elements
+brew cask install --appdir="/Applications" karabiner-elements
 
 # General apps
+echo install Anki
+brew cask install --appdir="/Applications" anki
 echo Installing VirtualBox
 brew cask install --appdir="/Applications" virtualbox
 echo Installing The Unarchiver
@@ -48,6 +54,8 @@ echo Installing Spectacle
 brew cask install --appdir="/Applications" spectacle
 echo Installing Skype
 brew cask install --appdir="/Applications" skype
+echo Installing Skype for business
+brew cask install --appdir="/Applications" skype-for-business
 echo Installing Google Chrome
 brew cask install --appdir="/Applications" google-chrome
 echo Installing DishInventoryX
@@ -72,10 +80,12 @@ echo Installing Anaconda
 brew cask install --appdir="/Applications" anaconda
 echo Installing Kindle
 brew cask install --appdir="/Applications" kindle
+echo Installing Spotify
+brew cask install --appdir="/Applications" spotify
 
 # IDE / Development
 echo Installing Intellij
-brew cask install --appdir="/Applications" intellij-idea-ce
+brew cask install --appdir="/Applications" intellij-idea
 echo Installing Atom
 brew cask install --appdir="/Applications" atom
 echo Installing PyCharm
@@ -86,6 +96,8 @@ echo Installing Postman
 brew cask install --appdir="/Applications" postman
 echo Installing screehero
 brew cask install screenhero
+echo Installing emacs
+brew cask install --appdir="/Applications" emacs --with-cocoa
 
 
 # Dev
@@ -105,8 +117,13 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 echo Installing personal apps
 
-# echo Installing Spotify
-# brew cask install --appdir="/Applications" spotify
+echo Installing Discord
+brew cask install --appdir="/Applications" discord
+echo Installing Calibre
+brew cask install --appdir="/Applications" calibre
+echo Installing Steam
+brew cask install --appdir="/Applications" steam
+# echo Installing rtorrent
 
 # Other app
 
