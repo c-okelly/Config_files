@@ -100,9 +100,9 @@ brew cask install --appdir="/Applications" postman
 echo Installing screehero
 brew cask install screenhero
 echo Installing emacs
-brew cask install --appdir="/Applications" emacs --with-cocoa
+brew install --appdir="/Applications" emacs --with-cocoa
 echo Installing docker
-brew cask install --appdir="/Applications" docker
+brew install --appdir="/Applications" docker
 
 
 # Dev
