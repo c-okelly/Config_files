@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Check user setup options
+read -p "Do you wish to personal applications (not currently setup)?" yn
+
 echo Install Xcode
 xcode-select --install
 echo Xcode location
