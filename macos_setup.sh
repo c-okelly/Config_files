@@ -103,7 +103,8 @@ echo Installing emacs
 brew install --appdir="/Applications" emacs --with-cocoa
 echo Installing docker
 brew install --appdir="/Applications" docker
-
+echo Installing sourcetree
+brew install --appdir="/Applications" sourcetree
 
 # Dev
 echo Installing node bower
@@ -128,6 +129,10 @@ echo Installing Calibre
 brew cask install --appdir="/Applications" calibre
 echo Installing Steam
 brew cask install --appdir="/Applications" steam
+echo Installing Cyberduck
+brew cask install --appdir="/Applications" cyberduck
+echo Installing Latex - MacTex
+brew cask install --appdir="/Applications" mactex
 # echo Installing rtorrent
 
 # Other app
