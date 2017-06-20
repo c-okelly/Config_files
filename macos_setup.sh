@@ -26,7 +26,7 @@ brew install python
 brew install python3
 
 # Command line extensions / apps
-echo Install wget z git mysql postgresql tree gradle maven
+echo Install wget z git mysql postgresql tree gradle maven zsh ispell
 brew install wget
 brew install z
 brew install git
@@ -35,6 +35,8 @@ brew install postgresql
 brew install tree
 brew install gradle
 brew install maven
+brew install zsh
+brew install ispell
 echo Installing tmux
 brew install tmux
 echo Installing iTerm2
@@ -85,6 +87,14 @@ echo Installing Kindle
 brew cask install --appdir="/Applications" kindle
 echo Installing Spotify
 brew cask install --appdir="/Applications" spotify
+echo Installing openvpn
+brew install --appdir="/Applications" openvpn
+echo Installing xquartx for wine
+brew cask install xquartz
+echo Installing wine
+brew install --appdir="/Applications" wine
+brew install winetricks
+
 
 # IDE / Development
 echo Installing Intellij
@@ -106,6 +116,9 @@ brew install --appdir="/Applications" docker
 echo Installing sourcetree
 brew install --appdir="/Applications" sourcetree
 
+# App settings
+winetricks settings fontsmooth=rgb
+
 # Dev
 echo Installing node bower
 brew install node
@@ -117,6 +130,7 @@ npm install -g grunt-cli
 sudo npm install gulp-cli -g
 npm install -g eslint
 npm install -g polymer-cli
+npm install jsonlint -g
 
 # echo Installing Quicklook packages
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
