@@ -94,6 +94,10 @@ brew cask install xquartz
 echo Installing wine
 brew install --appdir="/Applications" wine
 brew install winetricks
+echo Installing Apptivate
+brew cask install apptivate
+echo Installing Mackup
+brew install mackup
 
 
 # IDE / Development
@@ -115,9 +119,8 @@ echo Installing docker
 brew install --appdir="/Applications" docker
 echo Installing sourcetree
 brew install --appdir="/Applications" sourcetree
-
-# App settings
-winetricks settings fontsmooth=rgb
+echo Installing microsoft remote desktop
+brew cask install caskroom/versions/microsoft-remote-desktop-beta
 
 # Dev
 echo Installing node bower
@@ -149,7 +152,12 @@ echo Installing Latex - MacTex
 brew cask install --appdir="/Applications" mactex
 # echo Installing rtorrent
 
-# Other app
+# App settings
+echo Set wine up
+winetricks settings fontsmooth=rgb
+winecfg
+
+# Other apps
 
 # echo Installing Postgres
 # brew cask install --appdir="/Applications" postgres
