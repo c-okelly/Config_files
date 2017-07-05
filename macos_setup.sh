@@ -45,6 +45,8 @@ echo install hammerspoon
 brew cask install --appdir="/Applications" hammerspoon
 echo install karabiner elements
 brew cask install --appdir="/Applications" karabiner-elements
+echo install safe rm
+brew install safe-rm
 
 # General apps
 echo install Anki
@@ -89,6 +91,8 @@ echo Installing Spotify
 brew cask install --appdir="/Applications" spotify
 echo Installing openvpn
 brew install --appdir="/Applications" openvpn
+echo Installing tunnelblick
+brew cask install tunnelblick
 echo Installing xquartx for wine
 brew cask install xquartz
 echo Installing wine
@@ -150,6 +154,8 @@ echo Installing Cyberduck
 brew cask install --appdir="/Applications" cyberduck
 echo Installing Latex - MacTex
 brew cask install --appdir="/Applications" mactex
+echo Installing play-on-mac
+brew cask install --appdir="/Applications" playonmac
 # echo Installing rtorrent
 
 # App settings

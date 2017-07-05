@@ -36,14 +36,17 @@ alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gp='git push'
+alias gss='git stash'
+alias gsp='git stash pop'
 
-
+# Spelling corrections
 alias got='git '
 alias get='git '
 
 # Shortcuts - Files
 alias hosts='sudo nano /etc/hosts'
 
+### Short scripts ###
 # Compile java funcions and run
 function runj {
     echo "Compling and running $1 "
@@ -57,7 +60,10 @@ function runj {
     rm $class
 }
 
-# Jokes
-alias dance="echo I do not dance, bitch"				
-alias moo="cowsay Not all cows moo you know"
-alias begin="cmatrix"
+function bower_clean_reinstall {
+  echo "clear bash"
+  rm -r bower_components/
+  bower cache clean
+  bower install
+}
+
