@@ -138,6 +138,7 @@ sudo npm install gulp-cli -g
 npm install -g eslint
 npm install -g polymer-cli
 npm install jsonlint -g
+npm install spoof -g
 
 # echo Installing Quicklook packages
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
