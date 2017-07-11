@@ -120,7 +120,7 @@ brew cask install screenhero
 echo Installing emacs
 brew install --appdir="/Applications" emacs --with-cocoa
 echo Installing docker
-brew install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" docker
 echo Installing sourcetree
 brew install --appdir="/Applications" sourcetree
 echo Installing microsoft remote desktop
