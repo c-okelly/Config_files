@@ -47,6 +47,7 @@ echo install karabiner elements
 brew cask install --appdir="/Applications" karabiner-elements
 echo install safe rm
 brew install safe-rm
+brew install task
 
 # General apps
 echo install Anki
