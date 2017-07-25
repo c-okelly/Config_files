@@ -21,11 +21,11 @@ alias karabiner="cd /Users/cokelly/Library/Application\ Support/Karabiner"
 alias dev="cd /Users/conorokelly/Desktop/DevWork"
 
 # Work shortcuts
-alias dockQUp="docker-compose down && rm -rf webapps/* && docker-compose up"
-alias dockFUp="docker-compose down && docker-compose pull && rm -rf webapps/* && docker-compose up"
+alias dockQUp="docker-compose down; rm -rf webapps/* && docker-compose up"
+alias dockFUp="docker-compose down; docker-compose pull; rm -rf webapps/*; docker-compose up"
 alias drmi='docker rmi $(docker images --filter "dangling=true" -q --no-trunc)'
 alias drm='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
-alias dockFuCl='drm && drmi'
+alias dockFuCl='drm; drmi'
 alias killMc='/usr/local/McAfee/fmp/bin/fmp stop'
 alias startMc='/usr/local/McAfee/fmp/bin/fmp start'
 
