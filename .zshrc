@@ -89,4 +89,5 @@ source $ZSH/oh-my-zsh.sh
 . `brew --prefix`/etc/profile.d/z.sh
 . ~/.shortcuts.sh
 export KEYTIMEOUT=2
+
 setopt GLOB_COMPLETE
