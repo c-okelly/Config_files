@@ -20,10 +20,12 @@ brew install brew-cask
 echo Install work Apps
 
 # Languages
-echo Installing Java, Python, Python3
+echo Installing Java, Python, Python3, R
 brew cask install --appdir="/Applications" java
 brew install python
 brew install python3
+pip3 install --upgrade pip setuptools wheel
+brew install r
 
 # Command line extensions / apps
 echo Install wget z git mysql postgresql tree gradle maven zsh ispell
@@ -37,8 +39,10 @@ brew install gradle
 brew install maven
 brew install zsh
 brew install ispell
+brew install sl
 echo Installing tmux
 brew install tmux
+sudo gem install tmuxinator
 echo Installing iTerm2
 brew cask install --appdir="/Applications" iterm2
 echo install hammerspoon
@@ -103,6 +107,8 @@ echo Installing Apptivate
 brew cask install apptivate
 echo Installing Mackup
 brew install mackup
+echo Installing
+brew cask install mendeley-desktop
 
 
 # IDE / Development

@@ -1,3 +1,5 @@
+# Setting
+export EDITOR='vim'
 
 # Easier navigation
 alias ..="cd .."
@@ -28,7 +30,7 @@ alias dkeys="cp ~/.config/karabiner/karabiner-desktop.json ~/.config/karabiner/k
 # Work shortcuts
 alias killMc='/usr/local/McAfee/fmp/bin/fmp stop'
 alias startMc='/usr/local/McAfee/fmp/bin/fmp start'
-alias vac="wine C:\\Murexapp\\MxwClt.exe /remote /program:vac"
+alias vac="wine C:/\\Murexapp/\\MxwClt.exe /remote /program:vac"
 
 # Git shortcuts
 alias gs='git status '
@@ -72,6 +74,9 @@ alias get='git '
 
 # Shortcuts - Files
 alias hosts='sudo vim /etc/hosts'
+
+# tmuxinator
+#source ~/.bin/tmuxinator.bash
 
 ### Short scripts ###
 # Compile java funcions and run
