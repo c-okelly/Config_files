@@ -44,6 +44,7 @@ alias gx='gitx --all'
 alias gp='git pull'
 alias gss='git stash'
 alias gsp='git stash pop'
+alias gPer='git config user.email "okellyconor@gmail.com"'
 
 # Docker shortcuts
 alias dcd='docker-compose down'

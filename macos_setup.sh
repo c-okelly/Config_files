@@ -109,6 +109,8 @@ echo Installing Mackup
 brew install mackup
 echo Installing
 brew cask install mendeley-desktop
+echo Whatsapp
+brew cask install whatsapp
 
 
 # IDE / Development
