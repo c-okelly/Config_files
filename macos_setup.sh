@@ -52,6 +52,8 @@ brew cask install --appdir="/Applications" karabiner-elements
 echo install safe rm
 brew install safe-rm
 brew install task
+brew cask install sqlitebrowser
+brew install nethogs
 
 # General apps
 echo install Anki
@@ -111,6 +113,7 @@ echo Installing
 brew cask install mendeley-desktop
 echo Whatsapp
 brew cask install whatsapp
+brew cask install spotify
 
 
 # IDE / Development
