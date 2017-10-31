@@ -16,6 +16,8 @@ echo Install Homebrew
 echo Install Homebrew Cask
 brew tap caskroom/cask
 brew install brew-cask
+# Cask upgrader
+brew tap buo/cask-upgrade
 
 echo Install work Apps
 
@@ -54,6 +56,10 @@ brew install safe-rm
 brew install task
 brew cask install sqlitebrowser
 brew install nethogs
+brew install f3
+
+# Developement epps
+install cmake openssl jansson libpng sdl2 speexdsp libzip
 
 # General apps
 echo install Anki
@@ -114,6 +120,7 @@ brew cask install mendeley-desktop
 echo Whatsapp
 brew cask install whatsapp
 brew cask install spotify
+brew cask install texmaker
 
 
 # IDE / Development
