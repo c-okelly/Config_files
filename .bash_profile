@@ -5,12 +5,5 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-if [ ! -f ~/.git-completion.bash ]; then 
-  eval 'curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash'; 
-fi; 
-
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
-
 export PATH="$HOME/.cargo/bin:$PATH"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`

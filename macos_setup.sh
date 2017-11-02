@@ -16,6 +16,7 @@ echo Install Homebrew
 echo Install Homebrew Cask
 brew tap caskroom/cask
 brew install brew-cask
+brew tap homebrew/versions
 # Cask upgrader
 brew tap buo/cask-upgrade
 

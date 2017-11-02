@@ -91,3 +91,4 @@ source $ZSH/oh-my-zsh.sh
 export KEYTIMEOUT=2
 
 setopt GLOB_COMPLETE
+source ~/.bash_profile
