@@ -145,6 +145,7 @@ echo Installing sourcetree
 brew install --appdir="/Applications" sourcetree
 echo Installing microsoft remote desktop
 brew cask install caskroom/versions/microsoft-remote-desktop-beta
+brew cask install microsoft-teams
 
 # Dev
 echo Installing node bower

@@ -92,3 +92,4 @@ export KEYTIMEOUT=2
 
 setopt GLOB_COMPLETE
 source ~/.bash_profile
+export PATH="/usr/local/opt/curl/bin:$PATH"
