@@ -58,6 +58,7 @@ brew install task
 brew cask install sqlitebrowser
 brew install nethogs
 brew install f3
+brew install tldr
 
 # Developement epps
 install cmake openssl jansson libpng sdl2 speexdsp libzip
@@ -146,6 +147,7 @@ brew install --appdir="/Applications" sourcetree
 echo Installing microsoft remote desktop
 brew cask install caskroom/versions/microsoft-remote-desktop-beta
 brew cask install microsoft-teams
+brew cask install dbeaver-community
 
 # Dev
 echo Installing node bower
