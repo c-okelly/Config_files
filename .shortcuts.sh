@@ -9,9 +9,8 @@ alias .....="cd ../../../.."
 
 # Shortcuts - Navigation
 alias d="cd ~/Desktop"
+alias pdev="cd /Users/conorokelly/Desktop/Personal Dev"
 alias dr="cd /Users/cokelly/Google_Drive"
-alias c="cd /Users/cokelly/Google_Drive/Code"
-alias ucd="cd /Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4"
 alias o="open ."
 alias mk="mkdir"
 

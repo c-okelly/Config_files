@@ -5,5 +5,10 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
+### Custom path exports
+# Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+# Java 8
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# Gemfire
+export PATH=$PATH:/opt/pivotal/pivotal-gemfire-8.2.0.1/bin

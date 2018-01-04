@@ -92,8 +92,6 @@ echo Installing f-lux
 brew cask install --appdir="/Applications" flux
 echo Installing Libre Office
 brew cask install --appdir="/Applications" libreoffice
-echo Installing franz
-brew cask install --appdir="/Applications" franz
 echo Installing Wireshark
 brew cask install --appdir="/Applications" wireshark
 echo Installing CheatSheet
@@ -123,6 +121,7 @@ echo Whatsapp
 brew cask install whatsapp
 brew cask install spotify
 brew cask install texmaker
+brew cask install evernote
 
 
 # IDE / Development
