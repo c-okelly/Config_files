@@ -100,7 +100,7 @@ function bower_clean_reinstall {
 }
 
 ### Anki shortcuts
-qus() { 
+qus() {
 	if [ ! -z "$1" ]; then
 		echo "* $@" >> "$HOME/Desktop/qNotes.org"
 	else
@@ -108,7 +108,8 @@ qus() {
 			fi
 }
 
-ans() {if [ ! -z "$1" ]; then
+ans() {
+    if [ ! -z "$1" ]; then
 	echo "** $@" >> "$HOME/Desktop/qNotes.org"
 		fi
 }
