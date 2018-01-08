@@ -9,7 +9,7 @@ alias .....="cd ../../../.."
 
 # Shortcuts - Navigation
 alias d="cd ~/Desktop"
-alias pdev="cd /Users/conorokelly/Desktop/Personal Dev"
+alias pdev="cd /Users/conorokelly/Desktop/Personal_Dev"
 alias dr="cd /Users/cokelly/Google_Drive"
 alias o="open ."
 alias mk="mkdir"
@@ -21,6 +21,7 @@ alias ddown="mv /Users/cokelly/Desktop/*.torrent /Volumes/Storage/Downloads; cd 
 
 # Work navigation and shortcuts
 alias dev="cd /Users/conorokelly/Desktop/DevWork"
+alias dRestart="osascript -e 'quit app \"Docker\"'; open -a Docker"
 
 # Switch karabiner files
 alias lkeys="cp ~/.config/karabiner/karabiner-no-key.json ~/.config/karabiner/karabiner.json"
@@ -53,7 +54,7 @@ alias dfRun="dcd; dcp; dcu;"
 alias drmi='docker rmi $(docker images --filter "dangling=true" -q --no-trunc)'
 alias drm='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
 
-alias dRes='dcd; dcp; dcu;'
+alias dStart='dcd; dcp; dcu;'
 alias dClear='drm; drmi;'
 
 alias dockQUp="docker-compose down; rm -rf webapps/* && docker-compose up"
