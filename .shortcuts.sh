@@ -101,17 +101,18 @@ function bower_clean_reinstall {
 }
 
 ### Anki shortcuts
+qNotes="$HOME/Desktop/Notes/Org_Files/1.orgNotes/quickNotes.org"
 qus() {
 	if [ ! -z "$1" ]; then
-		echo "* $@" >> "$HOME/Desktop/qNotes.org"
+		echo "* $@" >> $qNotes
 	else
-		cat - >> "$HOME/Desktop/qNotes.org"
+		cat - >> $qNotes
 			fi
 }
 
 ans() {
     if [ ! -z "$1" ]; then
-	echo "** $@" >> "$HOME/Desktop/qNotes.org"
+	echo "** $@" >> $qNotes
 		fi
 }
 
