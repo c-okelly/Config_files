@@ -124,6 +124,7 @@ brew cask install whatsapp
 brew cask install spotify
 brew cask install texmaker
 brew cask install evernote
+brew cask install flux
 
 
 # IDE / Development
@@ -142,7 +143,7 @@ brew cask install screenhero
 echo Installing emacs
 brew install --appdir="/Applications" emacs --with-cocoa
 echo Installing docker
-brew cask install --appdir="/Applications" docker
+brew cask install docker-edge
 echo Installing sourcetree
 brew install --appdir="/Applications" sourcetree
 echo Installing microsoft remote desktop

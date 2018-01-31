@@ -4,6 +4,7 @@
 !.gitignore
 !.gitconfig
 !.shortcuts.sh
+!/scripts/*  
 !README.md
 !.spacemacs
 !.bachrc

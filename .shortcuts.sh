@@ -116,4 +116,6 @@ ans() {
 		fi
 }
 
+### Functions
 
+. ./scripts/functions.sh
