@@ -118,4 +118,4 @@ ans() {
 
 ### Functions
 
-. ./scripts/functions.sh
+. ~/scripts/functions.sh

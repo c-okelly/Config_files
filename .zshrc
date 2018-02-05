@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode git vim web-search gradle docker brew tmux zsh-syntax-highlighting)
+plugins=(vi-mode git vim web-search gradle docker brew tmux zsh-syntax-highlighting zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,6 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Extra packages
+source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
+# prompt update in local theme
+
+# for zsh-completions
+autoload -U compinit && compinit
 
 ### My shortcuts ###
 
