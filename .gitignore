@@ -1,16 +1,25 @@
-*
-!.hammerspoon/init.lua
-!.inputrc
+#Ignore all
+/*
+
+#Except
 !.gitignore
-!.gitconfig
-!.shortcuts.sh
-!/scripts/*  
 !README.md
-!.spacemacs
+!.gitconfig
+
+#Bash / zshrc
 !.bachrc
 !.bash_profile
-!macos_setup.sh
-!.tmux.conf
-!.zshrc
-!.mackup.cfg
+!.shortcuts.sh
 !oh-my-zsh.sh
+!.zshrc
+!.tmux.conf
+
+# Scripts
+!scripts/
+
+#Config
+!.hammerspoon/init.lua
+!.inputrc
+!.spacemacs
+!.mackup.cfg
+
