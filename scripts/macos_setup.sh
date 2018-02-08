@@ -130,12 +130,13 @@ brew cask install flux
 
 # IDE / Development
 echo Installing Intellij
-brew cask install --appdir="/Applications" intellij-idea
+brew cask install intellij-idea
 echo Installing Atom
 brew cask install --appdir="/Applications" atom
 echo Installing PyCharm
 brew cask install --appdir="/Applications" pycharm-ce
 echo Installing Visual Studio Code
+brew cask install visual-studio-code-insiders
 brew cask install --appdir="/Applications" visual-studio-code
 echo Installing Postman
 brew cask install --appdir="/Applications" postman
@@ -151,6 +152,7 @@ echo Installing microsoft remote desktop
 brew cask install caskroom/versions/microsoft-remote-desktop-beta
 brew cask install microsoft-teams
 brew cask install dbeaver-community
+brew cask install nvc-viwero
 
 # Dev
 echo Installing node bower

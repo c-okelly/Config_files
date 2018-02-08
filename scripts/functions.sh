@@ -1,8 +1,32 @@
 #!/bin/bash
 # Personal bash function
 
-# Setup work tmux environment and connect
-work () {
+# Bower clean
+function bower_clean_reinstall {
+  echo "clear bash"
+  rm -r bower_components/
+  bower cache clean
+  bower install
+}
+
+### Anki shortcuts
+qNotes="$HOME/Desktop/Notes/Org_Files/1.orgNotes/quickNotes.org"
+qus() {
+	if [ ! -z "$1" ]; then
+		echo "* $@" >> $qNotes
+	else
+		cat - >> $qNotes
+			fi
+}
+
+ans() {
+    if [ ! -z "$1" ]; then
+	echo "** $@" >> $qNotes
+		fi
+}
+
+# Core work no boot
+bWork () {
     session="work"
     # Alias to dev repo
     dev
@@ -16,6 +40,35 @@ work () {
     tmux splitw -v -p 50 
     tmux selectp -t 1 
     tmux splitw -v -p 50 
+
+    # New window
+    tmux new-window -t $session:2
+
+    # Upgrade oh my zsh and brew
+    tmux send-keys "upgrade_oh_my_zsh" C-m 
+    tmux send-keys "brew update" C-m 
+    tmux send-keys "brew upgrade" C-m 
+
+    # Return to window 1 (base)
+    tmux select-window -t $session:1
+
+    # Attach
+	tmux attach-session -t $session
+
+}
+
+# Setup work tmux environment and connect
+work () {
+
+    session="work"
+
+    # Detach if in session
+    if [[ "$TERM" =~ "screen".* ]]; then
+        `tmux detach-client`
+    fi
+
+    # Boot tmux work
+    bWork
 
     # cd into correct windows
     tmux selectp -t 3 
@@ -40,17 +93,6 @@ work () {
     tmux selectp -t 1
     tmux send-keys "cd polypop-client/" C-m 
 
-    # New window
-    tmux new-window -t $session:2
-
-    # Upgrade oh my zsh and brew
-    tmux send-keys "upgrade_oh_my_zsh" C-m 
-    tmux send-keys "brew update" C-m 
-    tmux send-keys "brew upgrade" C-m 
-
-    # Return to window 1 (base)
-    tmux select-window -t $session:1
-
     # Attach
-		tmux attach-session -t $session
+	tmux attach-session -t $session
 }

@@ -60,15 +60,6 @@ alias dClear='drm; drmi;'
 alias dockQUp="docker-compose down; rm -rf webapps/* && docker-compose up"
 alias dockFUp="docker-compose down; docker-compose pull; rm -rf webapps/*; docker-compose up"
 
-# Git branch bash completion
-#if [ -f ~/.git-completion.bash ]; then
-#  . ~/.git-completion.bash
-#  
-  # Add git completion to aliases
-#  __git_complete go _git_checkout
-#  __git_complete gp _git_pull
-#fi
-
 # Spelling corrections
 alias got='git '
 alias get='git '
@@ -76,46 +67,5 @@ alias get='git '
 # Shortcuts - Files
 alias hosts='sudo vim /etc/hosts'
 
-# tmuxinator
-#source ~/.bin/tmuxinator.bash
-
-### Short scripts ###
-# Compile java funcions and run
-function runj {
-    echo "Compling and running $1 "
-    # Created array of element seperate on .
-    IFS="." read -r -a array <<< "$1"
-    # Compile and then run
-    javac $1
-    java "${array[0]}"
-    class="${array[0]}.class"
-    # Remove class
-    rm $class
-}
-
-function bower_clean_reinstall {
-  echo "clear bash"
-  rm -r bower_components/
-  bower cache clean
-  bower install
-}
-
-### Anki shortcuts
-qNotes="$HOME/Desktop/Notes/Org_Files/1.orgNotes/quickNotes.org"
-qus() {
-	if [ ! -z "$1" ]; then
-		echo "* $@" >> $qNotes
-	else
-		cat - >> $qNotes
-			fi
-}
-
-ans() {
-    if [ ! -z "$1" ]; then
-	echo "** $@" >> $qNotes
-		fi
-}
-
 ### Functions
-
 . ~/scripts/functions.sh
