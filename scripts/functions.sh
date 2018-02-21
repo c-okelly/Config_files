@@ -45,7 +45,7 @@ bWork () {
     tmux new-window -t $session:2
 
     # Upgrade oh my zsh and brew
-    tmux send-keys "upgrade_oh_my_zsh" C-m 
+    # tmux send-keys "upgrade_oh_my_zsh" C-m 
     tmux send-keys "brew update" C-m 
     tmux send-keys "brew upgrade" C-m 
 
