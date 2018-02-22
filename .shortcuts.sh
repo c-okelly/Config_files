@@ -9,18 +9,13 @@ alias .....="cd ../../../.."
 
 # Shortcuts - Navigation
 alias d="cd ~/Desktop"
-alias pdev="cd /Users/conorokelly/Desktop/Personal_Dev"
-alias dr="cd /Users/cokelly/Google_Drive"
+alias pdev="cd /Users/$(whoami)/Desktop/Personal_Dev"
+alias dr="cd /Users/$(whoami)/Google_Drive"
 alias o="open ."
 alias mk="mkdir"
 
-# Non work navigaiton shortcuts
-alias down="cd /Users/cokelly/Desktop/Downloads; rtorrent"
-alias ddown="mv /Users/cokelly/Desktop/*.torrent /Volumes/Storage/Downloads; cd /Volumes/Storage/Downloads; rtorrent"
-# alias karabiner="cd /Users/cokelly/Library/Application\ Support/Karabiner"
-
 # Work navigation and shortcuts
-alias dev="cd /Users/conorokelly/Desktop/DevWork"
+alias dev="cd /Users/$(whoami)/Desktop/DevWork"
 alias dRestart="osascript -e 'quit app \"Docker\"'; open -a Docker"
 
 # Switch karabiner files
