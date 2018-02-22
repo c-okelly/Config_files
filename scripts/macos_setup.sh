@@ -43,16 +43,11 @@ brew install maven
 brew install zsh
 brew install ispell
 brew install sl
-echo Installing tmux
 brew install tmux
 sudo gem install tmuxinator
-echo Installing iTerm2
 brew cask install --appdir="/Applications" iterm2
-echo install hammerspoon
 brew cask install --appdir="/Applications" hammerspoon
-echo install karabiner elements
 brew cask install --appdir="/Applications" karabiner-elements
-echo install safe rm
 brew install safe-rm
 brew install task
 brew cask install sqlitebrowser
@@ -60,6 +55,7 @@ brew install nethogs
 brew install f3
 brew install tldr
 brew install jq
+
 # oh my zsh install
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
@@ -118,9 +114,7 @@ echo Installing Apptivate
 brew cask install apptivate
 echo Installing Mackup
 brew install mackup
-echo Installing
 brew cask install mendeley-desktop
-echo Whatsapp
 brew cask install whatsapp
 brew cask install spotify
 brew cask install texmaker
@@ -131,8 +125,6 @@ brew cask install flux
 # IDE / Development
 echo Installing Intellij
 brew cask install intellij-idea
-echo Installing Atom
-brew cask install --appdir="/Applications" atom
 echo Installing PyCharm
 brew cask install --appdir="/Applications" pycharm-ce
 echo Installing Visual Studio Code
@@ -152,14 +144,13 @@ echo Installing microsoft remote desktop
 brew cask install caskroom/versions/microsoft-remote-desktop-beta
 brew cask install microsoft-teams
 brew cask install dbeaver-community
-brew cask install nvc-viwero
+brew cask install real-vnc
 
-# Dev
+# Dev - Javascript
 echo Installing node bower
 brew install node
 brew install bower
 
-# Dev - Javascript
 echo Installing grunt gulp eslint polymer-cli
 npm install -g grunt-cli
 sudo npm install gulp-cli -g
@@ -185,7 +176,6 @@ echo Installing Latex - MacTex
 brew cask install --appdir="/Applications" mactex
 echo Installing play-on-mac
 brew cask install --appdir="/Applications" playonmac
-# echo Installing rtorrent
 
 # App settings
 echo Set wine up
@@ -193,16 +183,5 @@ winetricks settings fontsmooth=rgb
 winecfg
 
 # Other apps
-
-# echo Installing Postgres
-# brew cask install --appdir="/Applications" postgres
-# echo Installing Sequel Pro
-# brew cask install --appdir="/Applications" sequel-pro
-# echo Installing App Cleaner
-# brew cask install --appdir="/Applications" appcleaner
-# echo Installing Dashlane
 # brew cask install --appdir="/Applications" dashlane
-# echo Installing PDFExpert
-# brew cask install --appdir="/Applications" pdfexpert
-# echo Installing fantastical
 # brew cask install --appdir="/Applications" fantastical
