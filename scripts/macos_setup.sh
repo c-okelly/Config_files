@@ -24,7 +24,7 @@ echo Install work Apps
 
 # Languages
 echo Installing Java, Python, Python3, R
-brew cask install --appdir="/Applications" java
+brew cask install java
 brew install python
 brew install python3
 pip3 install --upgrade pip setuptools wheel
@@ -45,9 +45,9 @@ brew install ispell
 brew install sl
 brew install tmux
 sudo gem install tmuxinator
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" hammerspoon
-brew cask install --appdir="/Applications" karabiner-elements
+brew cask install iterm2
+brew cask install hammerspoon
+brew cask install karabiner-elements
 brew install safe-rm
 brew install task
 brew cask install sqlitebrowser
@@ -64,51 +64,51 @@ install cmake openssl jansson libpng sdl2 speexdsp libzip
 
 # General apps
 echo install Anki
-brew cask install --appdir="/Applications" anki
+brew cask install anki
 echo Installing VirtualBox
-brew cask install --appdir="/Applications" virtualbox
+brew cask install virtualbox
 echo Installing The Unarchiver
-brew cask install --appdir="/Applications" the-unarchiver
+brew cask install the-unarchiver
 echo Installing VLC
-brew cask install --appdir="/Applications" vlc
+brew cask install vlc
 echo Installing Spectacle
-brew cask install --appdir="/Applications" spectacle
+brew cask install spectacle
 echo Installing Skype
-brew cask install --appdir="/Applications" skype
+brew cask install skype
 echo Installing Skype for business
-brew cask install --appdir="/Applications" skype-for-business
+brew cask install skype-for-business
 echo Installing Google Chrome
-brew cask install --appdir="/Applications" google-chrome
+brew cask install google-chrome
 echo Installing DishInventoryX
-brew cask install --appdir="/Applications" disk-inventory-x
+brew cask install disk-inventory-x
 echo Installing Slack
-brew cask install --appdir="/Applications" slack
+brew cask install slack
 echo Installing Alfred
-brew cask install --appdir="/Applications" alfred
+brew cask install alfred
 echo Installing Keepingyouawake
-brew cask install --appdir="/Applications" keepingyouawake
+brew cask install keepingyouawake
 echo Installing f-lux
-brew cask install --appdir="/Applications" flux
+brew cask install flux
 echo Installing Libre Office
-brew cask install --appdir="/Applications" libreoffice
+brew cask install libreoffice
 echo Installing Wireshark
-brew cask install --appdir="/Applications" wireshark
+brew cask install wireshark
 echo Installing CheatSheet
-brew cask install --appdir="/Applications" cheatsheet
+brew cask install cheatsheet
 echo Installing Anaconda
-brew cask install --appdir="/Applications" anaconda
+brew cask install anaconda
 echo Installing Kindle
-brew cask install --appdir="/Applications" kindle
+brew cask install kindle
 echo Installing Spotify
-brew cask install --appdir="/Applications" spotify
+brew cask install spotify
 echo Installing openvpn
-brew install --appdir="/Applications" openvpn
+brew install openvpn
 echo Installing tunnelblick
 brew cask install tunnelblick
 echo Installing xquartx for wine
 brew cask install xquartz
 echo Installing wine
-brew install --appdir="/Applications" wine
+brew install wine
 brew install winetricks
 echo Installing Apptivate
 brew cask install apptivate
@@ -126,25 +126,24 @@ brew cask install flux
 echo Installing Intellij
 brew cask install intellij-idea
 echo Installing PyCharm
-brew cask install --appdir="/Applications" pycharm-ce
+brew cask install pycharm-ce
 echo Installing Visual Studio Code
 brew cask install visual-studio-code-insiders
-brew cask install --appdir="/Applications" visual-studio-code
+# brew cask install visual-studio-code
 echo Installing Postman
-brew cask install --appdir="/Applications" postman
-echo Installing screehero
-brew cask install screenhero
+brew cask install postman
 echo Installing emacs
-brew install --appdir="/Applications" emacs --with-cocoa
+brew install emacs --with-cocoa
 echo Installing docker
 brew cask install docker-edge
 echo Installing sourcetree
-brew install --appdir="/Applications" sourcetree
+brew install sourcetree
 echo Installing microsoft remote desktop
 brew cask install caskroom/versions/microsoft-remote-desktop-beta
 brew cask install microsoft-teams
 brew cask install dbeaver-community
 brew cask install real-vnc
+brew cask install jprofiler
 
 # Dev - Javascript
 echo Installing node bower
@@ -152,30 +151,29 @@ brew install node
 brew install bower
 
 echo Installing grunt gulp eslint polymer-cli
-npm install -g grunt-cli
-sudo npm install gulp-cli -g
+sudo npm install -g gulp-cli
 npm install -g eslint
 npm install -g polymer-cli
+npm install -g plolyserve
+npm install -g bower
 npm install jsonlint -g
 npm install spoof -g
 
-# echo Installing Quicklook packages
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 echo Installing personal apps
-
 echo Installing Discord
-brew cask install --appdir="/Applications" discord
+brew cask install discord
 echo Installing Calibre
-brew cask install --appdir="/Applications" calibre
+brew cask install calibre
 echo Installing Steam
-brew cask install --appdir="/Applications" steam
+brew cask install steam
 echo Installing Cyberduck
-brew cask install --appdir="/Applications" cyberduck
+brew cask install cyberduck
 echo Installing Latex - MacTex
-brew cask install --appdir="/Applications" mactex
+brew cask install mactex
 echo Installing play-on-mac
-brew cask install --appdir="/Applications" playonmac
+brew cask install playonmac
 
 # App settings
 echo Set wine up
@@ -183,5 +181,5 @@ winetricks settings fontsmooth=rgb
 winecfg
 
 # Other apps
-# brew cask install --appdir="/Applications" dashlane
-# brew cask install --appdir="/Applications" fantastical
+# brew cask install dashlane
+# brew cask install fantastical
