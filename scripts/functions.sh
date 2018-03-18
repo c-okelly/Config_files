@@ -27,6 +27,7 @@ ans() {
 
 # Core work no boot
 bWork () {
+    isWorkSesion=$1
     session="work"
     # Alias to dev repo
     dev
@@ -48,12 +49,17 @@ bWork () {
     # tmux send-keys "upgrade_oh_my_zsh" C-m 
     tmux send-keys "brew update" C-m 
     tmux send-keys "brew upgrade" C-m 
+    tmux send-keys "brew cask upgrade" C-m 
 
     # Return to window 1 (base)
     tmux select-window -t $session:1
 
-    # Attach
-	tmux attach-session -t $session
+    # Attach if not work session
+    if [ $workSession ]; then
+        echo "Work sesion"
+    else
+	    tmux attach-session -t $session
+    fi
 
 }
 
@@ -68,7 +74,8 @@ work () {
     fi
 
     # Boot tmux work
-    bWork
+    workSession=true
+    bWork $workSession
 
     # cd into correct windows
     tmux selectp -t 3 
