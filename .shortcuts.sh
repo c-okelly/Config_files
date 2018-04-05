@@ -48,6 +48,7 @@ alias dcu='docker-compose up'
 alias dfRun="dcd; dcp; dcu;"
 alias drmi='docker rmi $(docker images --filter "dangling=true" -q --no-trunc)'
 alias drm='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
+alias dKillAll='docker kill $(docker ps -q)'
 
 alias dStart='dcd; dcp; dcu;'
 alias dClear='drm; drmi;'
