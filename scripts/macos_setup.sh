@@ -15,16 +15,23 @@ echo Install Homebrew
 
 echo Install Homebrew Cask
 brew tap caskroom/cask
-brew install brew-cask
-brew tap homebrew/versions
+# brew install brew-cask
+# brew tap homebrew/versions
 # Cask upgrader
 brew tap buo/cask-upgrade
 
 echo Install work Apps
 
+# Install backup and sync and mackup
+echo Installing Mackup and backup and sync
+brew install mackup
+brew cask install google-backup-and-sync
+
+
 # Languages
 echo Installing Java, Python, Python3, R
 brew cask install java
+brew cask install java8
 brew install python
 brew install python3
 pip3 install --upgrade pip setuptools wheel
@@ -50,7 +57,7 @@ brew cask install hammerspoon
 brew cask install karabiner-elements
 brew install safe-rm
 brew install task
-brew cask install sqlitebrowser
+#brew cask install sqlitebrowser
 brew install nethogs
 brew install f3
 brew install tldr
@@ -112,8 +119,6 @@ brew install wine
 brew install winetricks
 echo Installing Apptivate
 brew cask install apptivate
-echo Installing Mackup
-brew install mackup
 brew cask install mendeley-desktop
 brew cask install whatsapp
 brew cask install spotify
@@ -172,8 +177,8 @@ echo Installing Cyberduck
 brew cask install cyberduck
 echo Installing Latex - MacTex
 brew cask install mactex
-echo Installing play-on-mac
-brew cask install playonmac
+#echo Installing play-on-mac
+#brew cask install playonmac
 
 # App settings
 echo Set wine up
