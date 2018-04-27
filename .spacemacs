@@ -317,6 +317,9 @@ you should place your code here."
   (spacemacs/set-leader-keys "d h" 'hs-toggle-hiding)
   (spacemacs/set-leader-keys "d s" 'shrink-window)
   (spacemacs/set-leader-keys "d c" 'ispell)
+  (evil-define-key 'normal evil-org-mode-map
+    "SPC RET" 'org-ctrl-c-ret)
+
 
   ;; Org capture mode templates
   ;; (setq org-capture-templates

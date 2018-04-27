@@ -36,6 +36,7 @@ brew install python
 brew install python3
 pip3 install --upgrade pip setuptools wheel
 brew install r
+brew install clojure
 
 # Command line extensions / apps
 echo Install wget z git mysql postgresql tree gradle maven zsh ispell

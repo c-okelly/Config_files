@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Extra packages
-source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
+# source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 # prompt update in local theme
 
 # for zsh-completions
