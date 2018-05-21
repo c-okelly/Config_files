@@ -302,23 +302,22 @@ you should place your code here."
   (setq eclim-executable "/Applications/Eclipse.app/Contents/Eclipse/eclim")
   ;; Use another eclimd executable
   ;; Specify the workspace to use by
-  (setq eclimd-default-workspace "/Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4/Advanced_Data_Structures_Java")
-  (setq eclimd-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimd")
+  ;; (setq eclimd-default-workspace "/Users/cokelly/Google_Drive/1._UCD_conversion_masters/1._Term_4/Advanced_Data_Structures_Java")
+  ;; (setq eclimd-executable "/Applications/Eclipse.app/Contents/Eclipse/eclimd")
 
   ;; Whether or not to block emacs until eclimd is ready
-  (setq eclimd-wait-for-process nil)
-  (setq auto-save-default nil)
+  ;; (setq eclimd-wait-for-process nil)
+  ;; (setq auto-save-default nil)
 
   ;; Set default directroy for helm and disable neo vc intergration
-  (setq default-directory "/Users/cokelly/Google_Drive")
+  (setq default-directory "/Users/conorokelly/Desktop/")
   (setq neo-vc-integration nil)
 
   ;; Custom spacemacs bindins. All to be bound under h
   (spacemacs/set-leader-keys "d h" 'hs-toggle-hiding)
   (spacemacs/set-leader-keys "d s" 'shrink-window)
   (spacemacs/set-leader-keys "d c" 'ispell)
-  (evil-define-key 'normal evil-org-mode-map
-    "SPC RET" 'org-ctrl-c-ret)
+  (Evil-define-key 'normal evil-org-mode-map "SPC RET" 'org-ctrl-c-ret)
 
 
   ;; Org capture mode templates

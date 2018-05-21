@@ -94,8 +94,8 @@ work () {
     tmux send-keys "sudo gulp serve" C-m
 
     tmux selectp -t 2
-    tmux send-keys "cd rest-service/" C-m 
-    tmux send-keys "gradle clean build --refresh-dependencies" C-m
+    tmux send-keys "cd rest-service-amber/" C-m 
+    tmux send-keys "./mvnw clean install -DskipTests" C-m
 
     tmux selectp -t 1
     tmux send-keys "cd polypop-client/" C-m 

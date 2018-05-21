@@ -100,6 +100,9 @@ autoload -U compinit && compinit
 
 ### My shortcuts ###
 
+ZSH_HIGHLIGHT_MAXLENGTH=300
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
+
 . `brew --prefix`/etc/profile.d/z.sh
 . ~/.shortcuts.sh
 export KEYTIMEOUT=2
