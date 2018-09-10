@@ -71,6 +71,8 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 install cmake openssl jansson libpng sdl2 speexdsp libzip
 
 # General apps
+echo install AppCleaner
+brew cask isntall appcleaner
 echo install Anki
 brew cask install anki
 echo Installing VirtualBox

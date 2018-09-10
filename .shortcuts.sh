@@ -23,6 +23,7 @@ alias lkeys="cp ~/.config/karabiner/karabiner-no-key.json ~/.config/karabiner/ka
 alias dkeys="cp ~/.config/karabiner/karabiner-desktop.json ~/.config/karabiner/karabiner.json"
 
 # Work shortcuts
+alias bigmac='sudo launchctl unload /Library/LaunchDaemons/com.mcafee.*'
 alias killMc='/usr/local/McAfee/fmp/bin/fmp stop'
 alias startMc='/usr/local/McAfee/fmp/bin/fmp start'
 alias vac="wine C:/\\Murexapp/\\MxwClt.exe /remote /program:vac"
