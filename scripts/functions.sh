@@ -9,22 +9,6 @@ function bower_clean_reinstall {
   bower install
 }
 
-### Anki shortcuts
-qNotes="$HOME/Desktop/Notes/Org_Files/1.orgNotes/quickNotes.org"
-qus() {
-	if [ ! -z "$1" ]; then
-		echo "* $@" >> $qNotes
-	else
-		cat - >> $qNotes
-			fi
-}
-
-ans() {
-    if [ ! -z "$1" ]; then
-	echo "** $@" >> $qNotes
-		fi
-}
-
 # Core work no boot
 bWork () {
     isWorkSesion=$1
@@ -49,7 +33,7 @@ bWork () {
     # tmux send-keys "upgrade_oh_my_zsh" C-m 
     tmux send-keys "brew update" C-m 
     tmux send-keys "brew upgrade" C-m 
-    tmux send-keys "brew cask upgrade" C-m 
+    #tmux send-keys "brew cask upgrade" C-m 
 
     # Return to window 1 (base)
     tmux select-window -t $session:1
@@ -94,8 +78,8 @@ work () {
     tmux send-keys "sudo gulp serve" C-m
 
     tmux selectp -t 2
-    tmux send-keys "cd rest-service-amber/" C-m 
-    tmux send-keys "./mvnw clean install -DskipTests" C-m
+    tmux send-keys "cd rest-service/" C-m 
+    tmux send-keys "./gradlew clean build" C-m 
 
     tmux selectp -t 1
     tmux send-keys "cd polypop-client/" C-m 
