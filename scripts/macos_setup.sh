@@ -63,6 +63,7 @@ brew install nethogs
 brew install f3
 brew install tldr
 brew install jq
+brew install ctop
 
 # oh my zsh install
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"

@@ -82,15 +82,16 @@ end)
 hs.hotkey.bind({"option"}, "'", function()
     hs.eventtap.keyStroke({"shift"}, "8")
 end)
-
--- Special characters - command left
-
 hs.hotkey.bind({"command"}, "j", function()
     hs.eventtap.keyStroke({"shift"}, "9")
 end)
 hs.hotkey.bind({"command"}, "k", function()
     hs.eventtap.keyStroke({"shift"}, "0")
 end)
+
+-- Special characters - command left
+
+
 hs.hotkey.bind({"command"}, "l", function()
     hs.eventtap.keyStroke({"shift"}, "-")
 end)
