@@ -12,3 +12,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # Gemfire
 export PATH=$PATH:/opt/pivotal/pivotal-gemfire-8.2.0.1/bin
+# Murex MVN
+export M3_HOME="$HOME/maven/maven-3.0.5"
+export PATH=$PATH:$M3_HOME/bin

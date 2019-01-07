@@ -58,7 +58,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode git vim web-search gradle docker brew tmux zsh-syntax-highlighting zsh-completions git-prompt kubectl)
+plugins=(vi-mode git vim web-search gradle docker brew tmux zsh-syntax-highlighting zsh-completions kubectl aws)
+
+#git-prompt
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +113,6 @@ setopt GLOB_COMPLETE
 source ~/.bash_profile
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export M3_HOME="~/maven/maven-3.0.5"
+export PATH=$PATH:$M3_HOME/bin
+
