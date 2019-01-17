@@ -130,7 +130,12 @@ brew cask install spotify
 brew cask install texmaker
 brew cask install evernote
 brew cask install flux
+brew cask install balenaEtcher
 
+# 3d printing
+brew cask install utilmaker-cura
+brew cask install Slic3r
+brew cask install meshmixer
 
 # IDE / Development
 echo Installing Intellij

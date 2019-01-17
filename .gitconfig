@@ -2,7 +2,7 @@
 	helper = osxkeychain
 [user]
 	name = c-okelly
-	email = conor.okelly@murex.com
+	email = cokelly@murex.com
 [push]
 	default = simple
 [alias]
